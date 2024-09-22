@@ -10,6 +10,7 @@ Description: Visualises a scatter-plot of `Sepal.Length` vs. `Petal.Width` of
 License: GPL-3 + file LICENSE
 Encoding: UTF-8
 RoxygenNote: 7.3.2
+Encoding: UTF-8
 Depends: R (>= 3.5.0)
 Imports: ggplot2
 Suggests: testthat (>= 3.0.0)

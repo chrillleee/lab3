@@ -1,11 +1,22 @@
-#' Add together two numbers
-#' 
-#' @param x A number.
-#' @param y A number.
-#' @returns A numeric vector.
+#' dijkstra's Algorithm
+#'
+#' @description This function implements Dijkstra's algorithm for finding the shortest paths from a source node to all other nodes in a graph.
+#' @param graph A list representing the adjacency list of the graph.
+#' @param init_node The starting node for the algorithm.
+#' @return A list containing the shortest paths from the source to all other nodes.
 #' @examples
-#' add(1, 1)
-#' add(10, 1)
+#' graph <- list(
+#'   A = list(B = 1, C = 4),
+#'   B = list(A = 1, C = 2, D = 5),
+#'   C = list(A = 4, B = 2, D = 1),
+#'   D = list(B = 5, C = 1)
+#' )
+#' dijkstra(graph, "A")
+#' 
+#' @references
+#' Wikipedia: \href{https://en.wikipedia.org/wiki/Dijkstra\%27s_algorithm}{Dijkstra's algorithm}
+#' @export
+
 dijkstra <-
 function(graph, init_node){
     expectedNames <- c("v1", "v2", "w")
