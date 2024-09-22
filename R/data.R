@@ -8,4 +8,7 @@
 #'   \item{w}{An integer vector the weight/cost of the transition from v1 to v2.}
 #' }
 #' \href{https://en.wikipedia.org/wiki/Dijkstra\%27s_algorithm}{this website}
+#' @docType data
+#' @usage data(wiki_graph)
+#' @format A data frame with 3 columns and N rows.
 "wiki_graph"

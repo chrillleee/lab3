@@ -5,10 +5,10 @@
 \alias{wiki_graph}
 \title{wiki_graph}
 \format{
-An object of class \code{data.frame} with 18 rows and 3 columns.
+A data frame with 3 columns and N rows.
 }
 \usage{
-wiki_graph
+data(wiki_graph)
 }
 \description{
 This dataset contains information about wiki_graph. Vertices v1, v2, and weight w
