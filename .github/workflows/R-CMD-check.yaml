@@ -49,3 +49,8 @@ jobs:
         with:
           upload-snapshots: true
           build_args: 'c("--no-manual","--compact-vignettes=gs+qpdf")'
+
+      - name: Run tests
+        run: |
+          install.packages('testthat')  # If testthat is required
+          Rscript -e 'devtools::test()'  # Run the tests
