@@ -5,13 +5,11 @@
 #' @param init_node The starting node for the algorithm.
 #' @return A list containing the shortest paths from the source to all other nodes.
 #' @examples
-#' graph <- list(
-#'   A = list(B = 1, C = 4),
-#'   B = list(A = 1, C = 2, D = 5),
-#'   C = list(A = 4, B = 2, D = 1),
-#'   D = list(B = 5, C = 1)
-#' )
-#' dijkstra(graph, "A")
+#' wiki_graph <- data.frame(v1=c(1,1,1,2,2,2,3,3,3,3,4,4,4,5,5,6,6,6),
+#'                          v2=c(2,3,6,1,3,4,1,2,4,6,2,3,5,4,6,1,3,5),
+#'                          w=c(7,9,14,7,10,15,9,10,11,2,15,11,6,6,9,14,2,9))
+#' dijkstra(wiki_graph, 1)
+#' 
 #' 
 #' @references
 #' Wikipedia: \href{https://en.wikipedia.org/wiki/Dijkstra\%27s_algorithm}{Dijkstra's algorithm}
@@ -71,8 +69,6 @@ function(graph, init_node){
         sort2 <- sort1[sort1$v2 == neighbor,]
         return(sort2$w)
     }
-
-
 
     expectedNames <- c("v1", "v2", "w")
     stopifnot(identical(names(graph), expectedNames))
