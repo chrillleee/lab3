@@ -1,0 +1,18 @@
+Package: lab3
+Type: Package
+Title: Lab3 
+Version: 1.0
+Date: 2022-06-17
+Author: Trace and Christian
+Maintainer: <qincu578@student.liu.se"> <chjon338@student.liu.se> 
+Description: Visualises a scatter-plot of `Sepal.Length` vs. `Petal.Width` of 
+    Iris flowers observed in the `iris` dataset.
+License: GPL-3 + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 3.5.0)
+Imports: ggplot2
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2022-08-22 09:04:00 UTC; kbart
