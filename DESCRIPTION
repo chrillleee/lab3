@@ -1,12 +1,13 @@
 Package: lab3
 Type: Package
-Title: What the Package Does (Short Line)
+Title: Euclidean method to calculate GCD and Dijkstra's Algorithm
 Version: 1.0
 Date: 2024-09-22
-Author: Who wrote it
-Maintainer: Who to complain to <yourfault@somewhere.net>
-Description: More about what it does (maybe more than one line).
+Author: Trace [aut] and Christ [aut]
+Maintainer:  <qincu578@student.liu.se> and <chjon338@student.liu.se>
+Description: This package contains 2 functions, one for calculate the greatest common divisor of 2 numbers in method of eulidean, another for implement the shortest path between 2 nodes in a graph.
 License: MIT
 Imports:
     testthat
 RoxygenNote: 7.3.2
+Encoding: UTF-8
